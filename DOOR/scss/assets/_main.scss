@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.back {
+  
+  width: 500px;
+  height: 140px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  perspective: 10cm;
+
+}
+
+.left, .right {
+  background-color: rgb(179, 67, 67);
+  border: 3px rgb(116, 45, 45) solid;
+  width: 250px;
+  height: 100px;
+
+
+}
+
+.left {
+  transform-origin: 0 0;
+  transform: rotateY(0deg);
+
+  
+}
+
+.right {
+  transform-origin: 250px 0;
+  transform: rotateY(0deg);
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(201, 201, 201);
+}
+
+.hello {
+  position: absolute;
+
+}
+
+.back:hover .left {
+  animation: slideL 2s linear both;
+}
+
+.back:hover .right {
+  animation: slideR 2s linear both;
+}
+
+@keyframes slideL {
+  0% {
+      transform: rotateY(0deg);
+  }    
+  100% {
+      transform: rotateY(40deg);
+  }
+}
+
+@keyframes slideR {
+  0% {
+      transform: rotateY(0deg);
+  }    
+  100% {
+      transform: rotateY(-40deg);
+  }
+}

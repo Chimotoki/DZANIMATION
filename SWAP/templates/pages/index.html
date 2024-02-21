@@ -1,0 +1,31 @@
+{% set page_name = 'Дверь' %}
+
+{% extends "layouts/main.layout.html" %} 
+
+{% block content %}
+<div class="container">
+  <div class="block">
+      <div class="text">HELLO, WORLD!</div>
+      <div class="pic">
+          <img src="fotooboi-listya-palmy-fon-foto.jpg" alt="" width="250" height="100">
+      </div>            
+  </div>
+  <div class="block">
+      <div class="pic">
+          <img src="fotooboi-listya-palmy-fon-foto.jpg" alt="" width="250" height="100">
+      </div>  
+      <div class="text">HELLO, WORLD!</div>
+  </div>
+  <div class="block">
+      <div class="text">HELLO, WORLD!</div>
+      <div class="pic">
+          <img src="fotooboi-listya-palmy-fon-foto.jpg" alt="" width="250" height="100">
+      </div>  
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+{% endblock %}

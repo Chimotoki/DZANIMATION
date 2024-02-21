@@ -1,0 +1,17 @@
+{% set page_name = 'Часы' %}
+
+{% extends "layouts/main.layout.html" %} 
+
+{% block content %}
+<div class="clock-container">
+    <div class="clock"></div>
+    <div class="clock-pin"></div>
+    <div class="minute-arrow"></div>
+    <div class="hour-arrow"></div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+{% endblock %}

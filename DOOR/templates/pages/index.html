@@ -1,0 +1,21 @@
+{% set page_name = 'Пальма' %}
+
+{% extends "layouts/main.layout.html" %} 
+
+{% block content %}
+<div class="hello">
+    HELLO
+</div>
+<div class="container">
+
+    <div class="back">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+{% endblock %}
